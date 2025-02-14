@@ -1,0 +1,71 @@
+/* Ensure the entire page is centered */
+body {
+    background-color: white;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto; /* Center the content */
+}
+
+/* Navigation */
+.navmenu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 10px auto; /* Center the menu */
+    display: flex;
+    justify-items: flex-start;
+    gap: 30px;
+    max-width: 1200px; /* Prevents stretching */
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Prevent hero image from overflowing */
+.hero-container {
+    display: flex;
+    justify-content: flex-end; /* Push image to the right */
+    max-width: 1200px;
+    margin: auto; /* Center the container */
+    padding: 40px;
+}
+
+.hero-image {
+    max-width: 500px; /* Adjust size as needed */
+    height: 80vh;
+    margin-right: 30px;
+}
+
+/* Footer Fix */
+footer {
+    text-align: center; /* Center content */
+    padding: 10px;
+}
+footer ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    justify-content: center; /* Center items */
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .navmenu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+body .sidebar{
+    display: none;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:250px;
+    z-index:999;
+    background-color: rgba(250, 235, 215, 0.007);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+}
