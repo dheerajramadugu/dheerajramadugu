@@ -109,3 +109,16 @@ body .sidebar{
     background-color: rgba(0, 0, 0, 0.1); /* Hover effect for the full block */
 }
 
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+
+}
+@media(max-width: 800px){
+    .hideonmobile{
+        display: none;
+    }
+
+}
+
