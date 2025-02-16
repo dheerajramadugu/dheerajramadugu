@@ -66,6 +66,46 @@ body .sidebar{
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0,0,0,0.1);
     flex-direction: column;
-    align-items:flex-start;
-    justify-content: flex-start;
+   align-items: flex-end; 
+    flex-direction: column;
+   justify-content: flex-start; /* Centers items vertically */
+   align-items: center; /* Centers items horizontally */
+   transition: background-color 0.3s ease;
 }
+
+.sidebar ul {
+   list-style: none;
+   padding:0;
+   margin: 0;
+   width: 100%; /* Ensures items take full width */
+   text-align: center; /* Aligns text to the center */
+   
+   
+}
+
+.sidebarebar ul li {
+   padding: 0px;
+   
+}
+/* Style the close icon */
+.sidebar .close-icon {
+    position: relative;
+    top: 15px; /* Adjust position */
+    left: 70px;
+    cursor: pointer; /* Show pointer on hover */
+    font-size: 20px;
+}
+
+    
+.sidebar li a {
+    display: block; /* Makes the link take full width */
+    width: 100px;
+   text-decoration: none;
+    color: #333;
+}
+
+
+.sidebar li:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Hover effect for the full block */
+}
+
