@@ -16,18 +16,26 @@
         <main>
 
 
-    <div>
-        <Nav id="navmenu" class="navmenu">
-            <ul>
-                <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\homepage.html" class="navmenu">home</a></li>
-                <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">about</a></li>
-                <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">resume</a></li>
-                <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\projects.html" class="navmenu">projects</a></li>
-                <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">contact</a></li>
-            </ul>
-        </Nav>
-
-    </div>
+            <div>
+                <Nav id="navmenu" class="navmenu">
+                  <ul class="sidebar">
+                    <li class="close-icon" onclick=hidesidebar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
+                    <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\homepage.html" class="navmenu">Home</a></li>
+                    <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">about</a></li>
+                    <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">resume</a></li>
+                    <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\projects.html" class="navmenu">projects</a></li>
+                    <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">contact</a></li>
+                  </ul>
+                  <ul>
+                    <li onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                    <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\homepage.html" class="navmenu">Home</a></li>
+                    <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">about</a></li>
+                    <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">resume</a></li>
+                    <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\projects.html" class="navmenu">projects</a></li>
+                    <li class="hideonmobile"><a href="contact.html" class="navmenu">contact</a></li>
+                  </ul>
+                </Nav>
+              </div>
 
 
     <!-- Background with Two Color Sections -->
@@ -47,7 +55,7 @@
                 </p>
             </div>
         </div>
-   
+    </div>
     <div>
     <section>
         <h2 class="about-h2">SKILLS</h2>
@@ -62,8 +70,22 @@
     </div>
     </section>
     </div>
-</main>
-<script src="https://kit.fontawesome.com/0cbbdf7bb5.js" crossorigin="anonymous"></script>
-
+    </main>
+    
+    <script src="https://kit.fontawesome.com/0cbbdf7bb5.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
 </body> 
+<hr class="divider">
+<footer>
+    <div class="footer-container">
+    <ul>
+      <li>CONTACT</li>
+      <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+    
+  </footer>
 </html>
