@@ -56,12 +56,12 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1000px) {
-    .container {
+    .about-container {
         flex-direction: column; /* Stack items vertically */
         text-align: center; /* Center text */
     }
 
-    .text, .image {
+    .about-text, .about-image {
         width: 100%; /* Adjust width */
     }
 }
