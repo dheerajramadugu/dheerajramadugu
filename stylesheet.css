@@ -9,6 +9,7 @@ body {
     padding: 20px;
     margin: auto; /* Center the content */
 }
+
 main {
     flex: 1;
     padding: 5px;
@@ -168,13 +169,107 @@ body .sidebar {
     color: #0c0c0c; /* Change color on hover */
 }
 
+.top {
+    height: 50%;
+    background-color: beige;
+}
+
+.bottom {
+    height: 50%;
+    background-color: white;
+}
+
+/* Content Container (Overlayed on Top) */
+.about-container {
+    position: relative; /* Changed from absolute to relative */
+    top: 50%;  /* Starts from the middle */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-bottom: 40px; /* Add margin to separate from the next section */
+}
+
+/* Image & Text Styling */
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    max-width: 100%; /* Adjust to fit the container */
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.about-text {
+    width: 80%;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center text */
+    }
+
+    .about-text, .about-image {
+        width: 100%; /* Adjust width */
+    }
+}
+
+/* Skills Grid Styling */
+.about-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto; /* Center the grid */
+    background-color: beige;
+    margin-top: 40px; /* Add margin to separate from the previous section */
+}
+
+.about-item {
+    padding: 20px;
+    text-align: center;
+    font-weight: normal;
+    font-size: x-large;
+    border-radius: 8px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.about-item i {
+    margin-right: 10px; /* Moves text to the right */
+}
+
+.about-h2 {
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Footer Styling */
 footer {
     width: 100%;
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 20px;
-   margin-top: 40px; /* Space between content and footer */
+    margin-top: 40px; /* Space between content and footer */
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
 }
 
 /* Footer Container */
@@ -184,19 +279,6 @@ footer {
 }
 
 /* Footer Links */
-footer {
-    text-align: center;
-    padding: 0px 0; /* Adjusted padding */
-    background-color: #333;
-    color: white;
-    width: 100%;
-    margin-top: 40px; /* Creates space between content and footer */
-    position: relative;
-    bottom: 0;
-    left: 60px; /* Move the footer towards the right */
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;      
-}
 footer ul li {
     display: inline;
 }
@@ -231,7 +313,8 @@ footer ul li a:hover {
     gap: 20px;
     margin-top: 20px;
 }
-.contact-container h1{
+
+.contact-container h1 {
     position: relative;
     display: inline-block;
     top: 200px;
@@ -240,6 +323,7 @@ footer ul li a:hover {
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 .contact-form {
     border: 2px solid #ccc; /* Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
@@ -252,7 +336,6 @@ footer ul li a:hover {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-style: normal;
-}
 }
 
 .contact-form .form-group {
@@ -286,5 +369,3 @@ footer ul li a:hover {
 .contact-form button:hover {
     background-color: #0056b3; /* Change button background color on hover */
 }
-
-
