@@ -237,12 +237,12 @@ body .sidebar {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
     gap: 20px; /* Space between grid items */
-    padding: 10%;
+    padding: 20px;
     max-width: 1200px;
     margin: auto; /* Center the grid */
     background-color: beige;
-    margin-top: 40px 0 0 40px; /* Add margin to separate from the previous section */
 }
+
 
 .about-item {
     padding: 20px;
@@ -418,4 +418,3 @@ footer ul li a:hover {
     background-color: #ccc;
     margin: 40px 0 0 50px;
 }
-ahchsviascvias
