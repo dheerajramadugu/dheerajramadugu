@@ -327,7 +327,15 @@ footer ul li a:hover {
 }
 
 /* Form Title */
-
+.contact-container h1 {
+    position: relative;
+    display: inline-block;
+    top: 200px;
+    right: 200px;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 /* Form Groups */
 .form-group {
