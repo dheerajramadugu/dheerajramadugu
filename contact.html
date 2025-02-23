@@ -18,7 +18,7 @@
             <Nav id="navmenu" class="navmenu">
               <ul class="sidebar">
                 <li class="close-icon" onclick=hidesidebar()><a href="#"><i class="fa-solid fa-x"></i></a></li>
-                <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\homepage.html" class="navmenu">Home</a></li>
+                <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\index.html" class="navmenu">Home</a></li>
                 <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">about</a></li>
                 <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">resume</a></li>
                 <li><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\projects.html" class="navmenu">projects</a></li>
@@ -26,34 +26,37 @@
               </ul>
               <ul>
                 <li onclick=showsidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\homepage.html" class="navmenu">Home</a></li>
+                <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\index.html" class="navmenu">Home</a></li>
                 <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">about</a></li>
                 <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\about.html" class="navmenu">resume</a></li>
                 <li class="hideonmobile"><a href="C:\Users\dheer\OneDrive\Desktop\portfolio\projects.html" class="navmenu">projects</a></li>
                 <li class="hideonmobile"><a href="contact.html" class="navmenu">contact</a></li>
               </ul>
             </Nav>
+            <section
           </div>
           <div class="contact-container">
-            <h1> let's connect</h1>
-            <form class="contact-form">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
-            </div>
-            <div class="form-group">
-                <label for="email">email</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-              </div>
-              <div class="form-group">
-                <label for="message">message</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter your name">
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-
-              </form>
-              
+            <h1>Let's Connect</h1>
+            <form id="contact-Form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    <span id="nameError" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter your email">
+                    <span id="emailError" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" placeholder="Enter your message"></textarea>
+                    <span id="messageError" class="error"></span>
+                </div>
+                <button type="submit" class=" btn-primary">Submit</button>
+            </form>
+        </div>
+              </section>
     </main>
     <script src="https://kit.fontawesome.com/0cbbdf7bb5.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
